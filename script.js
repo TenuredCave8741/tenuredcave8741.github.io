@@ -22,6 +22,11 @@ function enviarFormulario(webhookURL) {
         },
         body: JSON.stringify(datos),
     })
+
+    .then(response => {
+    console.log('Respuesta del servidor:', response);
+    // Resto del código...
+})
     .then(response => response.json())
     .then(data => {
         console.log('Mensaje enviado con éxito:', data);
