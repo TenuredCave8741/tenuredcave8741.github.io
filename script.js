@@ -7,7 +7,7 @@ function enviarFormulario() {
     var datos = {
         content: `Nuevo mensaje de contacto:
         Nombre: ${nombre}
-        Email: ${email}
+        Email: ${discord}
         Mensaje: ${mensaje}`
     };
 
