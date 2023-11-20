@@ -4,7 +4,8 @@ function enviarFormulario() {
     var mensaje = document.getElementById('mensaje').value;
 
         
-    const miSecreto = secrets.WEBHOOK_CONTACTO;
+    
+    const miSecreto = process.env.WEBHOOK_CONTACTO;
 
     
     // Construir el objeto de datos a enviar
