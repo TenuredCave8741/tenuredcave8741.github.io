@@ -12,7 +12,7 @@ function enviarFormulario() {
     };
 
     // URL del webhook de Discord
-    var webhookURL = 'TOKEN_CONTACTO_DISCORD';
+    var webhookURL = ${{ secrets.TOKEN_CONTACTO_DISCORD }};
 
     // Realizar la solicitud HTTP (POST) al webhook
     fetch(webhookURL, {
