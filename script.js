@@ -12,7 +12,7 @@ function enviarFormulario() {
     };
 
     // Obtener el URL del webhook desde la variable de entorno
-    var webhookURL = process.env.WEBHOOK_CONTACTO;
+    var webhookURL = process.env.${{ secrets.WEBHOOK_CONTACTO }};
 
     if (!webhookURL) {
         console.error('La variable de entorno WEBHOOK_URL no está configurada.');
