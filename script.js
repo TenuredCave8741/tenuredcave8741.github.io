@@ -16,7 +16,7 @@ function enviarFormulario() {
     };
 
     // URL del webhook de Discord
-    var webhookURL = WEBHOOK_CONTACTO;
+    var webhookURL = miSecreto;
 
     // Realizar la solicitud HTTP (POST) al webhook
     fetch(webhookURL, {
