@@ -12,7 +12,7 @@ function enviarFormulario() {
     };
 
     // URL del webhook de Discord
-    var webhookURL = '';
+    var webhookURL = 'WEBHOOK_CONTACTO';
 
     // Realizar la solicitud HTTP (POST) al webhook
     fetch(webhookURL, {
