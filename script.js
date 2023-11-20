@@ -3,8 +3,8 @@ function enviarFormulario() {
     var discord_name = document.getElementById('discord_name').value;
     var mensaje = document.getElementById('mensaje').value;
 
-    
-    const miSecreto = process.env.WEBHOOK_CONTACTO;
+        
+    const miSecreto = secrets.WEBHOOK_CONTACTO;
 
     
     // Construir el objeto de datos a enviar
