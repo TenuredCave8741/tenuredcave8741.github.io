@@ -15,6 +15,6 @@ jobs:
 
     - name: Ejecutar Script con Token Secreto
       run: |
-        node .github/scripts/mi-script.js
+        node scripts/mi-script.js
       env:
         WEBHOOK_CONTACTO: ${{ secrets.WEBHOOK_CONTACTO }}
