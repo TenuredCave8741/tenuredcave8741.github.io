@@ -80,12 +80,23 @@
     <div class="div_apartado" id="scroll_3">
         
         <h3 class="titulos_3">HOW TO CONTACT ME</h3>
-
-        <image class="copiar"id="gmail"src="resources/gmail.png"></image>
         <image class="copiar"id="discord"src="resources/discord.png"></image>
 
         <p><b>Discord: TenuredCave8741</b></p>
-
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="Nombre" required>
+    
+            <label for="Nombre discord">Correo Electrónico:</label>
+            <input type="text" id="email" name="email" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+    
+            <button type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    
+        <script src="script.js"></script>
     </div>
 
 </body>
