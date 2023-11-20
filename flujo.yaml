@@ -1,0 +1,20 @@
+name: Mi Flujo con Token Secreto
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mi-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del Repositorio
+      uses: actions/checkout@v2
+
+    - name: Ejecutar Script con Token Secreto
+      run: |
+        node scripts/mi-script.js
+      env:
+        WEBHOOK_CONTACTO: ${{ secrets.WEBHOOK_CONTACTO }}
