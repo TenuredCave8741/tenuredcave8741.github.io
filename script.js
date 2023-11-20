@@ -1,19 +1,24 @@
-function enviarFormulario(webhookURL) {
+function enviarFormulario() {
     var nombre = document.getElementById('nombre').value;
-    var discord_name = document.getElementById('discord_name').value;
+    var email = document.getElementById('email').value;
     var mensaje = document.getElementById('mensaje').value;
 
-    
     // Construir el objeto de datos a enviar
     var datos = {
         content: `Nuevo mensaje de contacto:
         Nombre: ${nombre}
-        Discord: ${discord_name}
+        Email: ${email}
         Mensaje: ${mensaje}`
     };
 
-    // URL del webhook de Discord
-    var webhookURL = 'WEBHOOK_CONTACTO';
+    // Obtener el URL del webhook desde la variable de entorno
+    var webhookURL = process.env.WEBHOOK_CONTACTO;
+
+    if (!webhookURL) {
+        console.error('La variable de entorno WEBHOOK_URL no está configurada.');
+        return;
+    }
+
     // Realizar la solicitud HTTP (POST) al webhook
     fetch(webhookURL, {
         method: 'POST',
@@ -22,11 +27,6 @@ function enviarFormulario(webhookURL) {
         },
         body: JSON.stringify(datos),
     })
-
-    .then(response => {
-    console.log('Respuesta del servidor:', response);
-    // Resto del código...
-})
     .then(response => response.json())
     .then(data => {
         console.log('Mensaje enviado con éxito:', data);
