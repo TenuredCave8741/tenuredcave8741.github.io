@@ -1,11 +1,7 @@
-function enviarFormulario() {
+function enviarFormulario(webhookURL) {
     var nombre = document.getElementById('nombre').value;
     var discord_name = document.getElementById('discord_name').value;
     var mensaje = document.getElementById('mensaje').value;
-
-        
-    
-    const miSecreto = process.env.WEBHOOK_CONTACTO;
 
     
     // Construir el objeto de datos a enviar
@@ -17,7 +13,6 @@ function enviarFormulario() {
     };
 
     // URL del webhook de Discord
-    var webhookURL = miSecreto;
 
     // Realizar la solicitud HTTP (POST) al webhook
     fetch(webhookURL, {
