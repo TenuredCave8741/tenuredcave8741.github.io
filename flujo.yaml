@@ -15,6 +15,4 @@ jobs:
 
     - name: Ejecutar Script con Token Secreto
       run: |
-        node script.js
-      env:
-        WEBHOOK_CONTACTO: ${{ secrets.WEBHOOK_CONTACTO }}
+        node script.js ${{ secrets.WEBHOOK_CONTACTO }}
