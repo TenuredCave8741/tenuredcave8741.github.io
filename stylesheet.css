@@ -108,8 +108,9 @@ h4{
   color: white;
 }
 #scroll_3{
-  background-image: url("resources/fondo5.jpg");
+  background-image: url("resources/fondo5.gif");
   background-size: cover;
+  background-origin: center;
   height: 100vh;
 }
 #interested{
