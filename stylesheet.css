@@ -110,8 +110,7 @@ h4{
 #scroll_3{
   background-image: url("resources/fondo5.gif");
   background-origin: center;
-  background-size: cover;
-  height: 100vh;
+  background-height: 100%;
 }
 #interested{
   color: rgb(0, 0, 0);
