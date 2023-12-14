@@ -109,20 +109,24 @@ h4{
 }
 #scroll_3{
   background-image: url("resources/fondo5.gif");
-  background-height: 100%;
-  background-color: #000007;
-  
+
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: #000000;
+}
+#discord_name{
+  font-family: 'Rubik Glitch', sans-serif;
+  color:purple;
+  position: relative;
+  top: 210px;
+  font-size: 130%;
 }
 #interested{
   color: rgb(0, 0, 0);
 }
-#scroll_4 {
-  background-color: #ffda9e;
-  background-size: cover;
-  height: 100vh;
-  
 
-}
 
 a {
   cursor: pointer;
