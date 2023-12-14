@@ -109,6 +109,9 @@ h4{
 }
 #scroll_3{
   background-image: url("resources/fondo5.gif");
+  background-height: 100%;
+  background-color: #000007;
+  
 }
 #interested{
   color: rgb(0, 0, 0);
