@@ -145,14 +145,32 @@ ul{
   max-height: 50px;
   position: relative;
   text-align: center;
-  top: 270px;
+  top: 330px;
   right: 58px;
+}
+#contactgif1 {
+  max-width: 50px;
+  max-height: 50px;
+  position: relative;
+  text-align: center;
+  top: 290px;
+  right: 130px;
 }
 
 #discord_name{
   font-family: 'Rubik Glitch', sans-serif;
   color:rgb(255, 255, 255);
   position: relative;
-  top: 210px;
-  font-size: 150%;
+  top: 35vh;
+  font-size: 130%;
+}
+#github_name{
+  font-family: 'Rubik Glitch', sans-serif;
+  color:rgb(255, 255, 255);
+  position: relative;
+  top: 30vh;
+  font-size: 130%;
+}
+#text_white{
+  color: white;
 }
