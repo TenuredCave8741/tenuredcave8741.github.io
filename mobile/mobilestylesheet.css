@@ -1,8 +1,4 @@
 
-html{
-  scroll-behavior: smooth;
-  overflow: hidden;
-}
 p{
   font-family: 'Space Mono', monospace;
 }
@@ -36,54 +32,6 @@ h4{
 }
 
 
-.div_mov:hover{
-  background: rgb(172, 172, 172);
-  border-color: rgb(255, 255, 255);
-  box-shadow:rgb(103, 103, 103);
-
-}
-.div_mov {
-  position: fixed;
-  top: 100px;
-  right:10px;
-  background: rgb(49, 49, 49);
-  color: rgb(67, 67, 67);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: black;
-  scroll-behavior: smooth;
-}
-
-
-.div_mov:nth-child(1) {
-  position: fixed;
-  top: 44%;
-  right:10px;
-
-}
-.div_mov:nth-child(2) {
-  position: fixed;
-  top: 48%;
-  right:10px;
-
-}
-.div_mov:nth-child(3) {
-  position: fixed;
-  top: 52%;
-  right:10px;
-
-}
-.div_mov:nth-child(4) {
-  position: fixed;
-  top: 56%;
-  right:10px;
-
-}
-
-
 #scroll_0{
   margin-top: -67px;
   background-color:#ff6961;
@@ -95,14 +43,14 @@ h4{
 }
 #scroll_1{
 
-  background-image: url("resources/fondo2.jpg");
+  background-image: url("../resources/fondo2.jpg");
   background-size: cover;
   height: 100vh;
   color:white;
   z-index: 2;
 }
 #scroll_2{
-  background-image: url("resources/fondo4.jpg");
+  background-image: url("../resources/fondo4.jpg");
 
   background-size: cover;
   z-index: 2;
